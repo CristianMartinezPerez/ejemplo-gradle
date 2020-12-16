@@ -7,7 +7,7 @@ pipeline {
                    script{
 				       stage('Build & Test')
 					   {
-					      sh "gradle clean build"  
+					      bat "gradle clean build"  
 
 					   }
 				       stage('Sonar')
@@ -22,7 +22,7 @@ pipeline {
 					   }	
 				       stage('Run')
 					   {
-					      sh "gradle bootRun &"
+					      bat "gradle bootRun &"
 					   }	
 				       stage('Rest')
 					   {
