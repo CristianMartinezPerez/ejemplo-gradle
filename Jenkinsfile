@@ -22,7 +22,8 @@ pipeline {
 					   }	
 				       stage('Run')
 					   {
-					      bat "gradle bootRun &"
+						  bat "nohup start gradle bootRun &"
+
 					   }	
 				       stage('Rest')
 					   {
