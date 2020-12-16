@@ -1,7 +1,7 @@
 # Getting Started
 
 ## Windows
-Verion para Gradle
+Version para Gradle
 ### Compile, Test, Jar
 *  gradle build
 
