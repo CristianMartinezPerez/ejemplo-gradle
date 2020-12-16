@@ -22,7 +22,7 @@ pipeline {
 					   }	
 				       stage('Run')
 					   {
-					      bat "gradle bootRun &"
+					      sh "gradle bootRun &"
 					   }	
 				       stage('Rest')
 					   {
