@@ -7,14 +7,14 @@ pipeline {
         stage('Pipeline') {
             steps {
 			       echo "Choice: ${params.herramienta}"
-                   script{
+                   /*script{
 				  
 					 
-					/* def ejecucion = (params.herramienta == 'gradle') ? load 'gradle.grovy' : load 'maven.grovy'
+					 def ejecucion = (params.herramienta == 'gradle') ? load 'gradle.grovy' : load 'maven.grovy'
 					 ejecucion.call()
-					 */
+					 
 
-				   }
+				   }*/
             }
         }
     }
