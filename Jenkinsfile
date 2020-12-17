@@ -9,6 +9,7 @@ pipeline {
                    script{
 				   				 
 					 def ejecucion = (params.herramienta == 'gradle') ? load 'gradle.grovy' : load 'maven.grovy'
+					 ejecucion.call()
 
 				   }
             }
