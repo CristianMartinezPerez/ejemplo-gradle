@@ -26,9 +26,8 @@ pipeline {
 					 
 				   }
             }
-        }
-		
-		post{
+			
+			post{
 			success{
 			        slackSend color: 'good', message: '[Cristian Martinez] [${env.JOB_NAME}] [${env.HERRAMIENTA}] Ejecución Exitosa', teamDomain: 'devops-usach-2020', tokenCredentialId: 'slacktoken'
 			}
@@ -37,5 +36,8 @@ pipeline {
 			}
 			
 		}
+        }
+		
+
     }
 }
