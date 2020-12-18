@@ -29,10 +29,10 @@ pipeline {
 			
 			post{
 			success{
-			        slackSend color: 'good', message: '[Cristian Martinez] [${env.JOB_NAME}] [${env.HERRAMIENTA}] Ejecución Exitosa', teamDomain: 'devops-usach-2020', tokenCredentialId: 'slacktoken'
+			        slackSend color: 'good', message: "[Cristian Martinez] [${env.JOB_NAME}] [${env.HERRAMIENTA}] Ejecucion Exitosa", teamDomain: 'devops-usach-2020', tokenCredentialId: 'slacktoken'
 			}
 			failure{ 
-			      slackSend color: 'danger', message: '[Cristian Martinez] [${env.JOB_NAME}] [${env.HERRAMIENTA}] Ejecución fallida en stage [${env.TAREA}]', teamDomain: 'devops-usach-2020', tokenCredentialId: 'slacktoken'
+			      slackSend color: 'danger', message: "[Cristian Martinez] [${env.JOB_NAME}] [${env.HERRAMIENTA}] Ejecucion fallida en stage [${env.TAREA}]", teamDomain: 'devops-usach-2020', tokenCredentialId: 'slacktoken'
 			}
 			
 		}
