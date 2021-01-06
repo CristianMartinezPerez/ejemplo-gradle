@@ -9,7 +9,9 @@ pipeline {
 			       /*echo "Choice: ${params.herramienta}"*/
                    script{				 
 					 /*def ejecucion = (params.herramienta == 'gradle') ? load 'gradle.groovy' : load 'maven.groovy'
-					 ejecucion.call()*/		
+					 ejecucion.call()*/
+			   
+			   		sh 'env'
 					 
 					 env.HERRAMIENTA = params.herramienta 
 					 
